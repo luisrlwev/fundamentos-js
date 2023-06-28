@@ -3,8 +3,8 @@
 const url = "https://jsonplaceholder.typicode.com/comments"
 
 const consultarAPI = async () => {
-    console.log('despues de respuesta')
-    console.log('despues de resultado')
+    const respuesta = await fetch(url)
+    const resultado = await respuesta.json()
 }
 
 consultarAPI()
